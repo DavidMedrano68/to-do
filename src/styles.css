@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Nunito:ital,wght@1,300&display=swap');
+*{
+    font-family: 'DynaPuff', sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width:100%;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;  
+}
+.heading{
+    text-align: center;
+}
+li{
+    padding: 10px;
+}
+.footer{
+    text-align: center;
+}
+input{
+    outline: transparent;
+    border: none;
+    background-color: transparent;
+}
+.ToDoContainer{
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    border: solid;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    position: absolute;
+    right: 0 ;
+    top: 0;
+
+}
+.toDoForm{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.add{
+    grid-column: span 2;
+    width: min-content;
+    justify-self: center;
+    padding: 5px;
+}
+.project-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.projName{
+    grid-column: span 2;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 5px;
+}
+.project button{
+    width: min-content;
+}
+.content{
+    display: grid;
+    grid-template-rows: 1fr 2fr 5fr;
+}
+.cell{
+    margin: 10px;
+    background-color:rgba(160,160,160,0.2);
+    box-shadow: 3px 3px 2px gray;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.makeProject{
+    grid-column: span 2;
+}
+.deleteBtn{
+    border: none;
+    background: rgba(255, 0, 0, 0.4);
+}
+.editBtn{
+background: rgba(0, 0, 255, 0.4);
+border: none;
+}
+.saveBtn,.add{
+    background: rgba(0, 255, 0, 0.4);
+    border: none
+}
+.addTodo{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.text,.date{
+    background-color:rgba(160,160,160,0.2);
+}
